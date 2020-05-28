@@ -13,7 +13,7 @@ include __DIR__ . '/partials/template/crud-head.php';
             <h2>Room Details</h2>
         </div>
         <div>
-            <span>La stanza <?php echo $room['id']; ?> &egrave; al piano <?php echo $room['floor']; ?> ed ha <?php echo $room['beds']; ?> letti</span>
+            <h3>La stanza <?php echo $room['id']; ?> &egrave; al piano <?php echo $room['floor']; ?> ed ha <?php echo $room['beds']; ?> letti</h3>
         </div>       
     </div>
 </div>
