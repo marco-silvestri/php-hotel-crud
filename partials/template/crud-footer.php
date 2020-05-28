@@ -1,10 +1,6 @@
     
     <footer>
-        <div>
-            <h4>
-                Marco Silvestri - 2020
-            </h4>
-        </div>
+        <span class="credits">Marco Silvestri - 2020</span>
     </footer>
     
     <!-- Script -->

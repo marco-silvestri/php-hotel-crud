@@ -7,7 +7,7 @@ include __DIR__ . '/partials/template/crud-head.php';
 ?>
 
 
-<div class="container">
+<div class="container d-flex flex-column">
     <div class="row">
         <div class="col-12">
             <h2>Rooms</h2>
@@ -31,7 +31,7 @@ include __DIR__ . '/partials/template/crud-head.php';
                                 <td><?php echo $room['room_number']; ?></td>
                                 <td><?php echo $room['floor']; ?></td>
                                 <td>
-                                    <a href="show.php">
+                                    <a href="show.php?id=<?php echo $room['id']; ?>">
                                         <button type="button" class="btn btn-success">
                                             View
                                         </button>

@@ -3,7 +3,7 @@
 include __DIR__ . '/../database.php';
 
 
-$id_room = 1;
+$id_room = $_GET['id'];
 
 //  Connection OK
 $sql = "SELECT * FROM `stanze` WHERE `id` = $id_room";

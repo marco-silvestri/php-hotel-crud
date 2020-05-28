@@ -8,5 +8,5 @@
 </head>
 <body>
     <header>
-        <h1>Hotel Manager</h1>
+        <h1 class="main-title">Hotel Manager</h1>
     </header>

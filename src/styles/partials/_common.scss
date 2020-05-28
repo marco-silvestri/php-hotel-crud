@@ -1,4 +1,33 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
 body {
     color: $dark;
     background-color: $light;
+    display: flex;
+    flex-direction: column;
+}
+
+footer {
+    margin: auto;
+    width: 100%;
+    background-color: $dark;
+    text-align: center;
+}
+
+.main-title {
+    text-align: center;
+}
+
+.credits {
+    font-size: 14px;
+    color: $light;
+}
+
+//  Bootstrap override
+.container {
+    flex-grow: 3;
 }

@@ -10928,8 +10928,36 @@ a.text-dark:focus {
   }
 }
 
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 body {
   color: #343a40;
   background-color: #f8f9fa;
+  display: flex;
+  flex-direction: column;
+}
+
+footer {
+  margin: auto;
+  width: 100%;
+  background-color: #343a40;
+  text-align: center;
+}
+
+.main-title {
+  text-align: center;
+}
+
+.credits {
+  font-size: 14px;
+  color: #f8f9fa;
+}
+
+.container {
+  flex-grow: 3;
 }
 

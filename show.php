@@ -7,7 +7,7 @@ include __DIR__ . '/partials/template/crud-head.php';
 ?>
 
 
-<div class="container">
+<div class="container d-flex flex-column">
     <div class="row">
         <div class="col-12">
             <h2>Room Details</h2>
