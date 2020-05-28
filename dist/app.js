@@ -104,8 +104,8 @@
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-!(function webpackMissingModule() { var e = new Error("Cannot find module '/opt/lampp/htdocs/php-crud/src/scipts/app.js'"); e.code = 'MODULE_NOT_FOUND'; throw e; }());
-module.exports = __webpack_require__(/*! /opt/lampp/htdocs/php-crud/src/styles/app.scss */"./src/styles/app.scss");
+!(function webpackMissingModule() { var e = new Error("Cannot find module '/opt/lampp/htdocs/php-hotel-crud/src/scipts/app.js'"); e.code = 'MODULE_NOT_FOUND'; throw e; }());
+module.exports = __webpack_require__(/*! /opt/lampp/htdocs/php-hotel-crud/src/styles/app.scss */"./src/styles/app.scss");
 
 
 /***/ })
