@@ -1,7 +1,7 @@
 {
   "name": "php-hotel-crud",
   "version": "1.0.0",
-  "description": "",
+  "description": "Hotel Manager",
   "main": "index.js",
   "scripts": {
     "dev": "npm run development",
@@ -22,5 +22,16 @@
     "sass": "^1.26.5",
     "sass-loader": "^8.0.2",
     "vue-template-compiler": "^2.6.11"
-  }
+  },
+  "dependencies": {
+    "bootstrap": "^4.5.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/marco-silvestri/php-hotel-crud.git"
+  },
+  "bugs": {
+    "url": "https://github.com/marco-silvestri/php-hotel-crud/issues"
+  },
+  "homepage": "https://github.com/marco-silvestri/php-hotel-crud#readme"
 }

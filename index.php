@@ -30,9 +30,27 @@ include __DIR__ . '/partials/template/crud-head.php';
                                 <td><?php echo $room['id']; ?></td>
                                 <td><?php echo $room['room_number']; ?></td>
                                 <td><?php echo $room['floor']; ?></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
+                                <td>
+                                    <a href="show.php">
+                                        <button type="button" class="btn btn-success">
+                                            View
+                                        </button>
+                                    </a>
+                                </td>
+                                <td>
+                                    <a href="">
+                                        <button type="button" class="btn btn-info">
+                                            Update
+                                        </button>
+                                    </a>
+                                </td>
+                                <td>
+                                    <a href="">
+                                        <button type="button" class="btn btn-danger">
+                                            Delete
+                                        </button>
+                                    </a>
+                                </td>
                             </tr>
                         <?php }
                     } ?>
@@ -42,7 +60,7 @@ include __DIR__ . '/partials/template/crud-head.php';
     </div>
 </div>
 
-<!-- Script -->
-<script src="/dist/app.js"></script>
-</body>
-</html>
+<?php
+//  Include the footer
+include __DIR__ . '/partials/template/crud-footer.php';
+?>
