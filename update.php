@@ -22,14 +22,15 @@ if (!empty($_GET['id'])){
         <div class="col-12">
             <h2>Update Room Details</h2>
             <div class="details-wrapper">
-                <form action="<?php echo $base_path; ?>partials/update/server.php">
+                <form action="<?php echo $base_path; ?>partials/update/server.php" method="POST">
+                    <input type="hidden" name="room_id" value="<?php echo $room_id; ?>">
                     <label for="room_number">Room Number</label>
                     <input type="number" name="room_number" id="room_number" value="<?php echo $room_number; ?>">
                     <label for="room_floor">Floor</label>
                     <input type="number" name="room_floor" id="room_floor" value="<?php echo $floor; ?>">
                     <label for="room_beds">Number of beds</label>
                     <input type="number" name="room_beds" id="room_beds" value="<?php echo $beds; ?>">
-                    <input type="button" class="btn btn-warning" value="Update">
+                    <input type="submit" class="btn btn-warning" value="Update">
                 </form>
             </div>
         </div>       
