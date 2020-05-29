@@ -44,11 +44,10 @@ if (!empty($_GET['delete'])){ ?>
                                     </a>
                                 </td>
                                 <td>
-                                    <a href="">
-                                        <button type="button" class="btn btn-info">
-                                            Update
-                                        </button>
-                                    </a>
+                                    <form action="<?php echo $base_path; ?>update.php" >
+                                        <input type="hidden" name="id" value=<?php echo $room['id']; ?>>
+                                        <input type="submit" class="btn btn-info" value="Update">
+                                    </form>
                                 </td>
                                 <td>
                                     <form action="<?php echo $base_path; ?>partials/delete/delete.php" >
