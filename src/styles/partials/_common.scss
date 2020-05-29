@@ -7,7 +7,6 @@
 body {
     color: $dark;
     background-color: $light;
-    display: flex;
     flex-direction: column;
 }
 
@@ -25,9 +24,4 @@ footer {
 .credits {
     font-size: 14px;
     color: $light;
-}
-
-//  Bootstrap override
-.container {
-    flex-grow: 3;
 }

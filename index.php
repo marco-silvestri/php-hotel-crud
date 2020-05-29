@@ -4,6 +4,12 @@ include __DIR__ . '/partials/home_page/server.php';
 //  Include the head
 include __DIR__ . '/partials/template/crud-head.php';
 
+if (!empty($_GET['delete'])){ ?>
+    <div class="alert alert-secondary" role="alert">
+        <span>The room ID <?php echo $_GET['delete']; ?> has been deleted succesfully!</span>
+    </div>
+<?php };
+
 ?>
 
 
@@ -45,11 +51,10 @@ include __DIR__ . '/partials/template/crud-head.php';
                                     </a>
                                 </td>
                                 <td>
-                                    <a href="">
-                                        <button type="button" class="btn btn-danger">
-                                            Delete
-                                        </button>
-                                    </a>
+                                    <form action="<?php echo $base_path; ?>partials/delete/delete.php" >
+                                        <input type="hidden" name="id" value=<?php echo $room['id']; ?>>
+                                        <input type="submit" class="btn btn-danger" value="Delete">
+                                    </form>
                                 </td>
                             </tr>
                         <?php }
