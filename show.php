@@ -6,16 +6,11 @@ include __DIR__ . '/partials/template/crud-head.php';
 
 ?>
 
-
-<div class="container d-flex flex-column">
-    <div class="row">
-        <div class="col-12">
-            <h2>Room Details</h2>
-        </div>
-        <div>
-            <h3>La stanza <?php echo $room['id']; ?> &egrave; al piano <?php echo $room['floor']; ?> ed ha <?php echo $room['beds']; ?> letti</h3>
-        </div>       
-    </div>
+<div class="container d-flex flex-column m-4">
+    <span>Details for Room <strong><?php echo $room['room_number']; ?></strong></span>
+    <span>ID: <strong><?php echo $room['id']; ?></strong></span>
+    <span>Floor: <strong><?php echo $room['floor']; ?></strong></span>
+    <span>Number of beds: <strong><?php echo $room['beds']; ?></strong></span>
 </div>
 
 <?php

@@ -10,18 +10,11 @@ body {
     flex-direction: column;
 }
 
-footer {
-    margin: auto;
-    width: 100%;
-    background-color: $dark;
-    text-align: center;
-}
-
-.main-title {
-    text-align: center;
-}
-
 .credits {
     font-size: 14px;
     color: $light;
+}
+
+span {
+    font-size: 24px;
 }
