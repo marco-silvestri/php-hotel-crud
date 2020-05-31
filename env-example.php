@@ -9,3 +9,4 @@ $db_name ='Database';
 $host = 'http://localhost/';
 $folder = 'php-hotel-crud/';
 $base_path = $host . $folder;
+$index_page = 'INDEX PAGE';
