@@ -12,7 +12,7 @@ if (!empty($_GET['delete'])){ ?>
 
 if (!empty($_GET['create'])){ ?>
     <div class="alert alert-secondary" role="alert">
-        <span>The new Room has been succesfully created!</span>
+        <span>The new Room with ID: <?php echo $_GET['create']; ?> has been succesfully created!</span>
     </div>
 <?php }; ?>
 

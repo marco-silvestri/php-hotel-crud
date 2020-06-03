@@ -11,6 +11,8 @@ include __DIR__ . '/partials/template/crud-head.php';
     <span>ID: <strong><?php echo $room['id']; ?></strong></span>
     <span>Floor: <strong><?php echo $room['floor']; ?></strong></span>
     <span>Number of beds: <strong><?php echo $room['beds']; ?></strong></span>
+    <span>Created: <strong><?php echo $room['created_at']; ?></strong></span>
+    <span>Last update: <strong><?php echo $room['updated_at']; ?></strong></span>
 </div>
 
 <?php

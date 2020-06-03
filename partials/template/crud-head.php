@@ -30,6 +30,9 @@ if ($uri == "/" . $folder){ ?>
             <li class="nav-item active">
                 <a class="nav-link" href="<?php echo $base_path;?>create.php">Create</a>
             </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="<?php echo $base_path;?>bookings.php">Bookings</a>
+            </li>
         </ul>
     </div>
 </nav>

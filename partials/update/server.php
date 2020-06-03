@@ -14,16 +14,18 @@ $room_number = $_POST['room_number'];
 $floor = $_POST['room_floor'];
 $beds = $_POST['room_beds'];
 
-//  Compose the query and interrogate the DB
+//  UPDATE with PREPARED STATEMENT
 $sql = "UPDATE `stanze` 
-        SET `room_number`=$room_number, `floor`=$floor, `beds`=$beds, `updated_at`= CURRENT_TIMESTAMP 
-        WHERE `id`=$id";
-$result = $conn->query($sql);
+        SET `room_number`= ?, `floor`= ?, `beds`= ?, `updated_at`= NOW()
+        WHERE `id`= ?";
+$statement = $conn->prepare($sql);
+$statement->bind_param('iiii', $room_number, $floor, $beds, $id);
+$statement->execute();
 
 //  Print the output
-if ($result && $conn->affected_rows > 0){
+if ($statement && $statement->affected_rows > 0){
     header("Location:" . $base_path . "show.php?id=$id");
-} elseif ($result) {
+} elseif ($statement) {
     die("There was an error with the DB, please try again later");
 } else {
     die("I could not connect to the DB.");
